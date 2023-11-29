@@ -4,10 +4,12 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Post from "./pages/Post/Post";
 import Auth from "./pages/Auth/Auth";
+import Participate from "./pages/Participate/Participate";
 import Loader from "./components/Loader/Loader";
 import { Navigate } from "react-router-dom";
 import { useEffect, useState, useContext, useCallback } from "react";
 import { UserContext } from "./context/UserContext";
+import Footer from "./components/Footer/Footer";
 // webpack
 
 const App = () => {
@@ -42,7 +44,7 @@ const App = () => {
         });
     };
     getUser();
-  }, []);
+  }, [user, userContext]);
 
   // local auth - data fetch
   const verifyUser = useCallback(() => {
@@ -71,44 +73,33 @@ const App = () => {
     verifyUser();
   }, [verifyUser]);
 
-  
-
   return (
     <BrowserRouter>
       <div>
-        <Navbar user={user} />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
             path="/login"
             element={
-              // user || userContext.token ? (
-              //   <Navigate to="/" replace={true} />
-              // ) : (
-              //   <Auth />
-              // )
-              // !user && !userContext.token?(
-              //   <Auth/>:(
-              //   )
-              // )
-              userContext.token === null ? (
-                !user ? (
-                  <Auth />
-                ) : (
-                  <Navigate to="/" replace={true} />
-                )
-              ) : userContext.token ? (
+              user || userContext.token ? (
                 <Navigate to="/" replace={true} />
               ) : (
-                <Loader />
+                <Auth />
               )
             }
           />
+          {/* <Route path="/participate" element={<Participate />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/discover" />
+          <Route path="/profile" /> */}
           <Route
             path="/post/:id"
-            element={user ? <Post /> : <Navigate to="/login" replace={true} />}
+            // element={<Post user={user} />}
+            element={user && <Post user={user} />}
           />
         </Routes>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

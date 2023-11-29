@@ -1,0 +1,64 @@
+.navbarContainer {
+    margin: 0rem;
+    z-index: 1000;
+    background-color: #080808;
+}
+
+.button.nav-link {
+    color: #eee;
+    width: 12rem;
+    height: 3.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: 1.6px solid var(--linear-1, #C018CE);
+    background-color: #080808;
+}
+
+.button.nav-link p {
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button:hover {
+    background-color: #000;
+    border: 1.6px solid var(--linear-1, #C018CE);
+}
+
+.button p:hover {
+    color: #fff;
+}
+
+.nav-link {
+    color: #80807f;
+    font-family: Verdana;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+@media screen and (min-width:990px) {
+    .nav-board {
+        margin-left: 100%;
+        gap: 2.25rem;
+        align-items: center;
+        background-color: #080808;
+    }
+}
+@media screen and (max-width:990px) {
+    .nav-board {
+        margin-top: 1.3rem;
+        padding-left: 1.5rem;
+        gap: 2.1rem;
+        background-color: #080808;
+    }
+}

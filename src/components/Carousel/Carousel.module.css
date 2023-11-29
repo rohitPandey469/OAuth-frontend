@@ -1,0 +1,39 @@
+.dibba{
+    padding-bottom: 8rem;
+}
+.container {
+    max-width: 40.6rem;
+    margin: 0 auto;
+    margin-top: 9rem;
+    z-index: -1;
+    margin-bottom: 2.15rem;
+    padding-bottom: 3rem;
+}
+
+.button {
+    display: flex;
+    padding: 1.2rem 2.4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    border: 2.56px solid var(--linear-1, #C018CE);
+    background: var(--colors-black-max, #080808);
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background: var(--colors-black-max, #080808);
+    border-radius: 1rem;
+    border: 2.56px solid var(--linear-1, #C018CE);
+}
+
+.text {
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

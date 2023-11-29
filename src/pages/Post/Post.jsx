@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 
-const Post = () => {
-  return <h1>Post</h1>;
+const Post = ({ user = null }) => {
+  // const navigate = useNavigate();
+  // useEffect(() => {
+  //   if (user == null) {
+  //     navigate("/login");
+  //     alert("No access!");
+  //   }
+  // }, []);
+  return <h1>{user?.displayName}</h1>;
 };
 
 export default Post;

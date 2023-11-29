@@ -1,3 +1,7 @@
+// bootstrap styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+// bootstrap icons
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
