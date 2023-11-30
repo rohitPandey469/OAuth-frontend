@@ -14,9 +14,6 @@ function Slider() {
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           src="/images/carousel.png"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className={styles.imgContainer}>
         <img
@@ -24,9 +21,7 @@ function Slider() {
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           src="/images/carousel.png"
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
+        
       </Carousel.Item>
       <Carousel.Item className={styles.imgContainer}>
         <img
@@ -34,9 +29,6 @@ function Slider() {
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           src="/images/carousel.png"
         />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
     <Button className={`btn ${styles.button}`}>

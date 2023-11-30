@@ -93,6 +93,7 @@ const App = () => {
           <Route path="/upload" element={<Upload />} />
           <Route path="/discover" />
           <Route path="/profile" /> */}
+          <Route path="/upload" element={<Post/>}/>
           <Route
             path="/post/:id"
             // element={<Post user={user} />}

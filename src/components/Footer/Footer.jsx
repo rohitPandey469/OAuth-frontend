@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 
 const Footer = () => {
   return (
-    <footer style={{border:"2px solid white",display:"flex",justifyContent:"center"}} className="bg-dark text-light py-4">
-      <Container>
+    <footer style={{display:"flex",justifyContent:"center",backgroundColor:"#000",position:"sticky",bottom:"0",left:"0",width:"100vw"}} className="bg-dark text-light py-4">
+      <Container >
         <Row className="align-items-center">
           {/* Logo */}
           <Col

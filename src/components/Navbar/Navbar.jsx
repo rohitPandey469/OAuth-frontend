@@ -20,7 +20,7 @@ function Header({ user }) {
         left: "0",
         right: "0",
         height: "6.88rem",
-        backgroundColor: "#080808",
+        backgroundColor:"#000"
       }}
     >
       <Container className="container">

@@ -1,7 +1,7 @@
 .navbarContainer {
     margin: 0rem;
     z-index: 1000;
-    background-color: #080808;
+    background-color: #000;
 }
 
 .button.nav-link {
@@ -14,7 +14,7 @@
     font-size: 1.25rem;
     border-radius: 0.5rem;
     border: 1.6px solid var(--linear-1, #C018CE);
-    background-color: #080808;
+    background-color: #000;
 }
 
 .button.nav-link p {
@@ -51,7 +51,7 @@
         margin-left: 100%;
         gap: 2.25rem;
         align-items: center;
-        background-color: #080808;
+        background-color: #000;
     }
 }
 @media screen and (max-width:990px) {
@@ -59,6 +59,6 @@
         margin-top: 1.3rem;
         padding-left: 1.5rem;
         gap: 2.1rem;
-        background-color: #080808;
+        background-color: #000;
     }
 }

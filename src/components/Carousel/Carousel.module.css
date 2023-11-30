@@ -12,15 +12,16 @@
 
 .button {
     display: flex;
-    padding: 1.2rem 2.4rem;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    width:14rem;
+    height: 4rem;
     border-radius: 0.8rem;
     border: 2.56px solid var(--linear-1, #C018CE);
     background: var(--colors-black-max, #080808);
     margin: 0 auto;
     transition: all 0.5s ease;
+    position: relative;
 }
 
 .button:hover {
@@ -30,9 +31,18 @@
 }
 
 .text {
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
     color: #FFF;
     font-family: Verdana;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
