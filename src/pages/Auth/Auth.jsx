@@ -10,12 +10,12 @@ const Login = () => {
   // OAuths
   const google = () => {
     setIsSubmitting(true);
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open("https://oauth-backend-ic3k.onrender.com/auth/google", "_self");
   };
 
   const linkedin = () => {
     setIsSubmitting(true);
-    window.open("http://localhost:5000/auth/linkedin", "_self");
+    window.open("https://oauth-backend-ic3k.onrender.com/auth/linkedin", "_self");
   };
 
   // For local auth
@@ -34,7 +34,7 @@ const Login = () => {
     if (!isSignUp) {
       // login
       // import.meta.env.REACT_APP_API_ENDPOINT + "/users/login"
-      fetch("http://localhost:5000/users/login", {
+      fetch("https://oauth-backend-ic3k.onrender.com/users/login", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
@@ -66,7 +66,7 @@ const Login = () => {
         });
     } else {
       // register
-      fetch("http://localhost:5000/users/signup", {
+      fetch("https://oauth-backend-ic3k.onrender.com/users/signup", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

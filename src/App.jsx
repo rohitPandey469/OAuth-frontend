@@ -21,7 +21,7 @@ const App = () => {
     const getUser = () => {
       // oauth - fetch
       // `${import.meta.env.REACT_APP_API_ENDPOINT}/auth/login/success`
-      fetch("http://localhost:5000/auth/login/success", {
+      fetch("https://oauth-backend-ic3k.onrender.com/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {
@@ -49,7 +49,7 @@ const App = () => {
   // local auth - data fetch
   const verifyUser = useCallback(() => {
     // On page refresh - fetching the data
-    fetch("http://localhost:5000/users/refreshToken", {
+    fetch("https://oauth-backend-ic3k.onrender.com/users/refreshToken", {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
